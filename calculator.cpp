@@ -1,20 +1,39 @@
-#include <iostream>
+#include<iostream>
+
 using namespace std;
 
-int main() {
+int main() 
+{
     char op;
     float a, b;
-    cout << "Enter operator (+, -, *, /): ";
+
+    cout << "Enter Operator (+, -, *, /) : ";
     cin >> op;
-    cout << "Enter two numbers: ";
+
+    cout << "Enter two Numbers : ";
     cin >> a >> b;
 
-    switch(op) {
-        case '+': cout << a + b; break;
-        case '-': cout << a - b; break;
-        case '*': cout << a * b; break;
-        case '/': cout << a / b; break;
-        default: cout << "Invalid operator";
+    switch(op) 
+    {
+        case '+': 
+            cout << a + b; 
+            break;
+
+        case '-': 
+            cout << a - b; 
+            break;
+
+        case '*': 
+            cout << a * b; 
+            break;
+
+        case '/': 
+            cout << a / b; 
+            break;
+
+        default: 
+            cout << "Invalid Operator";
     }
+    
     return 0;
 }
