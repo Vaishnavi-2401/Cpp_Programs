@@ -1,22 +1,33 @@
-#include <iostream>
-#include <cmath>
+#include<iostream>
+#include<cmath>
+
 using namespace std;
 
-int main() {
+int main() 
+{
     int num, sum = 0, temp, digit;
-    cout << "Enter a number: ";
+
+    cout << "Enter the Number : ";
+
     cin >> num;
+
     temp = num;
 
-    while(temp != 0) {
+    while(temp != 0) 
+    {
         digit = temp % 10;
-        sum += pow(digit, 3);
-        temp /= 10;
+        sum = sum + pow(digit, 3);
+        temp = temp / 10;
     }
 
     if(sum == num)
-        cout << "Armstrong number";
+    {
+        cout << "Armstrong Number";
+    }
     else
-        cout << "Not Armstrong";
+    {
+        cout << "Not a Armstrong";
+    }
+
     return 0;
 }
