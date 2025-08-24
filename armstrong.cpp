@@ -8,7 +8,6 @@ int main()
     int num, sum = 0, temp, digit;
 
     cout << "Enter the Number : ";
-
     cin >> num;
 
     temp = num;

@@ -7,7 +7,6 @@ int main()
     int n, t1 = 0, t2 = 1, nextTerm;
 
     cout << "Enter Number of Terms : ";
-
     cin >> n;
 
 
@@ -16,9 +15,7 @@ int main()
         cout << t1 << " ";
 
         nextTerm = t1 + t2;
-
         t1 = t2;
-
         t2 = nextTerm;
     }
     
